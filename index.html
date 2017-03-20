@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="js/require.js"></script>
+        <script type="text/javascript">
+            require.config({
+                baseUrl : "js",
+                paths : {
+                    "jquery" : ["http://libs.baidu.com/jquery/2.0.3/jquery", "jquery"],
+                    "b" : "b"
+                },
+                shim: {
+                "c" : { exports : "c" }
+                }
+            });
+            require(["b"], function(){ });
+        </script>
+    </head>
+    <body>
+      <span>body</span>
+    </body>
+</html>
